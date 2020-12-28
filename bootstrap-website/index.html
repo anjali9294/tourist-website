@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-uppercase" href="#">tourist</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle text-uppercase" type="button"
+                            id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            explore touristlink
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="#">Destination</a></li>
+                            <li><a class="dropdown-item" href="#">Tours and Packages</a></li>
+                            <li><a class="dropdown-item" href="#">Members</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <button type="button" class="btn btn-primary d-flex mx-2" data-bs-toggle="modal" data-bs-target="#loginmodel">login</button>
+                <!-- login modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="loginmodel" tabindex="-1" aria-labelledby="loginmodelLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginmodelLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+               
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">login</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+                <button type="button" class="btn btn-primary d-flex mx-2" data-bs-toggle="modal" data-bs-target="#signupmodel">signup</button>
+                <!-- signup modal -->
+  
+  <div class="modal fade" id="signupmodel" tabindex="-1" aria-labelledby="signupmodelLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupmodelLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="login" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1400x500/?forest,senery" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Discover the world</h>
+                        <p>Connect with over 50,000 local guides and 150,000 travelers worldwide.</p>
+                        <button type="button" class="btn btn-danger btn-lg">Where do you want to go?</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x500/?nature" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Discover the world</h>
+                        <p>Connect with over 50,000 local guides and 150,000 travelers worldwide.</p>
+                        <button type="button" class="btn btn-danger btn-lg">Where do you want to go?</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1400x500/?forest" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Discover the world</h>
+                        <p>Connect with over 50,000 local guides and 150,000 travelers worldwide.</p>
+                        <button type="button" class="btn btn-danger btn-lg">Where do you want to go?</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <div class="container my-2">
+        <div class="row">
+            <div class="col col-sm">
+                <ul class="nav justify-content-center border-2 bg-light ">
+                    <li class="nav-item ">
+                        <a class="nav-link active fa fa-map-marker fa-3x " aria-current="page" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" col col-sm">
+                <ul class="nav justify-content-center bg-light ">
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-user-circle fa-3x" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" col col-sm">
+                <ul class="nav justify-content-center bg-light ">
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-briefcase fa-3x" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row my-2 ">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                    src="https://source.unsplash.com/1400x600/?bali" alt="">
+
+                <div class="card-body">
+                    <h4>bali</h4>
+                    <p class="card-text">320 places and 555 members</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary">View</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 my-2 mx-4">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                    src="https://source.unsplash.com/1400x600/?vietnam" alt="">
+
+                <div class="card-body">
+                    <h4>Vietnam</h4>
+                    <p class="card-text">1250 places and 2400 members</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary">View</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 my-2 mx-4">
+            <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                    src="https://source.unsplash.com/1400x600/?kerala" alt="">
+
+                <div class="card-body">
+                    <h4>Kerala</h4>
+                    <p class="card-text">2050 places and 1500 members</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary">View</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col my-2 mx-4">
+        <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                src="https://source.unsplash.com/1400x600/?Egypt" alt="">
+
+            <div class="card-body">
+                <h4>Egtpt</h4>
+                <p class="card-text">820 places and 3400 members</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-secondary">View</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col my-2 mx-4">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                        src="https://source.unsplash.com/1400x600/?tanzania" alt="">
+
+                    <div class="card-body">
+                        <h4>tanzania</h4>
+                        <p class="card-text">320 places and 555 members</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-secondary">View</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="col my-2 mx-4">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                            src="https://source.unsplash.com/1400x600/?Nepal" alt="">
+
+                        <div class="card-body">
+                            <h4>Nepal</h4>
+                            <p class="card-text">320 places and 555 members</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-secondary">View</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+                <div class="col my-2 mx-4">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                                src="https://source.unsplash.com/1400x600/?Chile" alt="">
+
+                            <div class="card-body">
+                                <h4>Chile</h4>
+                                <p class="card-text">320 places and 555 members</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-secondary">View</button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col my-2 mx-4">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                                    src="https://source.unsplash.com/1400x600/?peru" alt="">
+
+                                <div class="card-body">
+                                    <h4>peru</h4>
+                                    <p class="card-text">320 places and 555 members</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary">View</button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col my-2 mx-4">
+                            <div class="col">
+                                <div class="card shadow-sm">
+                                    <img class="bd-placeholder-img card-img-top" width="100%" height="400"
+                                        src="https://source.unsplash.com/1400x600/?indore" alt="">
+
+                                    <div class="card-body">
+                                        <h4>indore</h4>
+                                        <p class="card-text">320 places and 555 members</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary">View</button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- </div>
+</div>
+</div> -->
+
+
+
+
+                    <!-- Optional JavaScript; choose one of the two! -->
+
+                    <!-- Option 1: Bootstrap Bundle with Popper -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+                        crossorigin="anonymous"></script>
+
+                    <!-- Option 2: Separate Popper and Bootstrap JS -->
+                    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
